@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+<div class="home">
+
+  <h1>Tabs</h1>
+  <ul class="page-list">
+    {% for page in site.pages %}
+      {% if page.categories contains 'tab' %}
+      <li>
+        <h2>
+          <a class="post-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+        </h2>
+      </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+</div>
