@@ -10,7 +10,7 @@ layout: default
       {% if page.categories contains 'tab' %}
       <li>
         <h2>
-          <a class="post-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+          <a class="post-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a> (<a class="file-link" href="{{ site.baseurl }}/tabs/{{page.directory}}/{{page.file}}.pdf">pdf</a>)
         </h2>
       </li>
       {% endif %}
